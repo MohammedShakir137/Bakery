@@ -202,29 +202,24 @@ footer{
 }
 
 /* style section login and signup page */
-
-#signInForm{
-    width: 30%;
+#signupButton{
     color: #251605;
-    font-family:"New Amsterdam",sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-#loginForm{
+#signupButton a{
     color: #251605;
-    width: 30%;
+    
+}
+form{
+    color: #251605;
+    width: 350px;
     font-family:"New Amsterdam",sans-serif ;
 }
 
-#loginForm button{
-    color: #DDC9B4;
-    background-color: #251605;
-    margin-top: 5%;
-    width: 100%;
-    height: 40px;
-    font-family:"New Amsterdam",sans-serif ;
-}
 
-#signInForm button{
+.formSubmission{
     color: #DDC9B4;
     background-color: #251605;
     margin-top: 5%;
@@ -246,3 +241,4 @@ h1{
     text-align: center;
     font-family:"New Amsterdam",sans-serif ;
 }
+
