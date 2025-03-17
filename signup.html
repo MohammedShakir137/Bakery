@@ -42,5 +42,24 @@
             </div>
         </form>
     </main>
+    <script>
+    document.getElementById('signInForm').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const firstName = document.getElementById('fName').value;
+        const lastName = document.getElementById('lName').value;
+        const email = document.getElementById('eMail').value;
+        const password = document.getElementById('pass').value;
+    
+        const response = await fetch('http://localhost:5000/api/auth/signup', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ firstName, lastName, email, password }),
+        });
+    
+        const result = await response.json();
+        alert(result.message || result.error);
+    });
+    </script>
+
 </body>
 </html>
